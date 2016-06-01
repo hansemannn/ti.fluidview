@@ -21,6 +21,8 @@
     if (fluidView == nil) {
         
         fluidView = [[BAFluidView alloc] initWithFrame:[self bounds] startElevation:[NSNumber numberWithFloat:1.0]];
+        
+        // Todo: Move fillTo to proxy method
         fluidView.fillColor = [UIColor redColor];
         [fluidView fillTo:@0.9];
         [fluidView startAnimation];
@@ -45,7 +47,6 @@
     ENSURE_TYPE(value, NSString);
     [[self fluidView] setFillColor:[[TiUtils colorValue:value] _color]];
 }
-
 
 - (void)setStrokeColor_:(id)value
 {
