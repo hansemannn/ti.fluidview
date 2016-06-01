@@ -10,22 +10,17 @@
 
 @implementation TiFluidviewView
 
--(void)dealloc
+- (void)dealloc
 {
     RELEASE_TO_NIL(fluidView);
     [super dealloc];
 }
 
--(BAFluidView*)fluidView
+- (BAFluidView*)fluidView
 {
     if (fluidView == nil) {
         
         fluidView = [[BAFluidView alloc] initWithFrame:[self bounds] startElevation:[NSNumber numberWithFloat:1.0]];
-        
-        // Todo: Move fillTo to proxy method
-        [fluidView fillTo:@0.9];
-        [fluidView startAnimation];
-
         [fluidView setAutoresizingMask:UIViewAutoresizingNone];
         
         [self addSubview:fluidView];
@@ -34,7 +29,7 @@
     return fluidView;
 }
 
--(TiFluidviewViewProxy*)fluidViewProxy
+- (TiFluidviewViewProxy*)fluidViewProxy
 {
     return (TiFluidviewViewProxy*)[self proxy];
 }
@@ -98,7 +93,7 @@
 #pragma mark Layout utilities
 
 #ifdef TI_USE_AUTOLAYOUT
--(void)initializeTiLayoutView
+- (void)initializeTiLayoutView
 {
     [super initializeTiLayoutView];
     [self setDefaultHeight:TiDimensionAutoFill];
@@ -108,13 +103,13 @@
 
 #pragma mark Public APIs
 
--(void)setWidth_:(id)width_
+- (void)setWidth_:(id)width_
 {
     width = TiDimensionFromObject(width_);
     [self updateContentMode];
 }
 
--(void)setHeight_:(id)height_
+- (void)setHeight_:(id)height_
 {
     height = TiDimensionFromObject(height_);
     [self updateContentMode];
@@ -122,38 +117,35 @@
 
 #pragma mark Layout helper
 
--(void)updateContentMode
+- (void)updateContentMode
 {
     if (self != nil) {
-        [self setContentMode:[self contentModeForColorPicker]];
+        [self setContentMode:[self contentModeForFluidView]];
     }
 }
 
--(UIViewContentMode)contentModeForColorPicker
+- (UIViewContentMode)contentModeForFluidView
 {
     if (TiDimensionIsAuto(width) || TiDimensionIsAutoSize(width) || TiDimensionIsUndefined(width) ||
         TiDimensionIsAuto(height) || TiDimensionIsAutoSize(height) || TiDimensionIsUndefined(height)) {
         return UIViewContentModeScaleAspectFit;
-    }
-    else {
+    } else {
         return UIViewContentModeScaleToFill;
     }
 }
 
--(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
+- (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
-    for (UIView *child in [[self fluidView] subviews])
-    {
+    for (UIView *child in [[self fluidView] subviews]) {
         [TiUtils setView:child positionRect:bounds];
     }
     
     [super frameSizeChanged:frame bounds:bounds];
 }
 
--(CGFloat)contentWidthForWidth:(CGFloat)suggestedWidth
+- (CGFloat)contentWidthForWidth:(CGFloat)suggestedWidth
 {
-    if (autoWidth > 0)
-    {
+    if (autoWidth > 0) {
         //If height is DIP returned a scaled autowidth to maintain aspect ratio
         if (TiDimensionIsDip(height) && autoHeight > 0) {
             return roundf(autoWidth*height.value/autoHeight);
@@ -162,15 +154,14 @@
     }
     
     CGFloat calculatedWidth = TiDimensionCalculateValue(width, autoWidth);
-    if (calculatedWidth > 0)
-    {
+    if (calculatedWidth > 0) {
         return calculatedWidth;
     }
     
     return 0;
 }
 
--(CGFloat)contentHeightForWidth:(CGFloat)width_
+- (CGFloat)contentHeightForWidth:(CGFloat)width_
 {
     if (width_ != autoWidth && autoWidth>0 && autoHeight > 0) {
         return (width_*autoHeight/autoWidth);
@@ -188,7 +179,7 @@
     return 0;
 }
 
--(UIViewContentMode)contentMode
+- (UIViewContentMode)contentMode
 {
     if (TiDimensionIsAuto(width) || TiDimensionIsAutoSize(width) || TiDimensionIsUndefined(width) ||
         TiDimensionIsAuto(height) || TiDimensionIsAutoSize(height) || TiDimensionIsUndefined(height)) {
