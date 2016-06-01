@@ -10,4 +10,14 @@
 
 }
 
+- (void)fillTo:(id)value;
+
+- (void)startAnimation:(id)unused;
+
+- (void)startTiltAnimation:(id)unused;
+
+- (void)stopAnimation:(id)unused;
+
+- (void)keepStationary:(id)unused;
+
 @end
