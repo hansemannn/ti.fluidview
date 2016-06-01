@@ -10,6 +10,11 @@
 
 @implementation TiFluidviewView
 
+-(void)dealloc
+{
+    RELEASE_TO_NIL(fluidView);
+    [super dealloc];
+}
 
 -(BAFluidView*)fluidView
 {
@@ -31,6 +36,63 @@
 -(TiFluidviewViewProxy*)fluidViewProxy
 {
     return (TiFluidviewViewProxy*)[self proxy];
+}
+
+#pragma mark Public APIs
+
+- (void)setFillColor_:(id)value
+{
+    ENSURE_TYPE(value, NSString);
+    [[self fluidView] setFillColor:[[TiUtils colorValue:value] _color]];
+}
+
+
+- (void)setStrokeColor_:(id)value
+{
+    ENSURE_TYPE(value, NSString);
+    [[self fluidView] setStrokeColor:[[TiUtils colorValue:value] _color]];
+}
+
+- (void)setLineWidth_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setLineWidth:[TiUtils floatValue:value]];
+}
+
+- (void)setFillAutoReverse_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setFillAutoReverse:[TiUtils boolValue:value]];
+}
+
+- (void)setFillRepeatCount_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setFillRepeatCount:[TiUtils floatValue:value]];
+}
+
+- (void)setMaxAmplitude_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setMaxAmplitude:[TiUtils intValue:value]];
+}
+
+- (void)setMinAmplitude_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setMinAmplitude:[TiUtils intValue:value]];
+}
+
+- (void)setAmplitudeIncrement_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setAmplitudeIncrement:[TiUtils intValue:value]];
+}
+
+- (void)setFillDuration_:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[self fluidView] setFillDuration:[TiUtils doubleValue:value]];
 }
 
 #pragma mark Layout utilities

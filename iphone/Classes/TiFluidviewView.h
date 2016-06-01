@@ -18,4 +18,22 @@
 
 - (BAFluidView*)fluidView;
 
+- (void)setFillColor_:(id)value;
+
+- (void)setStrokeColor_:(id)value;
+
+- (void)setLineWidth_:(id)value;
+
+- (void)setFillAutoReverse_:(id)value;
+
+- (void)setFillRepeatCount_:(id)value;
+
+- (void)setMaxAmplitude_:(id)value;
+
+- (void)setMinAmplitude_:(id)value;
+
+- (void)setAmplitudeIncrement_:(id)value;
+
+- (void)setFillDuration_:(id)value;
+
 @end
