@@ -7,12 +7,12 @@ apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: ti.fluidview
 author: Hans Knoechel
-license: Specify your license
-copyright: Copyright (c) 2016 by Your Company
+license: Apache 2.0
+copyright: Copyright (c) 2016 by Hans Knoechel
 
 # these should not be edited
 name: ti.fluidview
 moduleid: ti.fluidview
 guid: 626097a2-ee6c-40a4-b67e-11a81ef4412a
 platform: iphone
-minsdk: 5.4.0
+minsdk: 5.2.0

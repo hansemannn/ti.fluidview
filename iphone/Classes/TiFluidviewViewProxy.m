@@ -16,7 +16,7 @@
 - (void)fillTo:(id)value
 {
     ENSURE_UI_THREAD(fillTo, value);
-    ENSURE_TYPE(value, NSNumber);
+    ENSURE_SINGLE_ARG(value, NSNumber);
     
     [[(TiFluidviewView*)[self view] fluidView] fillTo:[NSNumber numberWithFloat:[TiUtils floatValue:value]]];
 }

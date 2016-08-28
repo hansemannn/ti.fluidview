@@ -20,7 +20,8 @@
 {
     if (fluidView == nil) {
         
-        fluidView = [[BAFluidView alloc] initWithFrame:[self bounds] startElevation:[NSNumber numberWithFloat:1.0]];
+        NSNumber *startElevation = [NSNumber numberWithFloat:[TiUtils floatValue:[[self proxy] valueForKey:@"elevation"] def:1.0]];
+        fluidView = [[BAFluidView alloc] initWithFrame:[self bounds] startElevation:startElevation];
         [fluidView setAutoresizingMask:UIViewAutoresizingNone];
         
         [self addSubview:fluidView];

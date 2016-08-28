@@ -6,7 +6,7 @@ Ti.FluidView is an open-source project to support the [BAFluidView](https://gith
 
 Requirements
 ---------------
-  - Titanium Mobile SDK 5.0.2.GA or later
+  - Titanium Mobile SDK 5.2.0.GA or later
   - iOS 7.1 or later
   - Xcode 6.4 or later
 
@@ -63,7 +63,6 @@ var fluidView = Fluid.createView({
 win.add(fluidView);
 win.open();
 ```
-For a full example, check the demo in `iphone/example/app.js`.
 
 Author
 ---------------

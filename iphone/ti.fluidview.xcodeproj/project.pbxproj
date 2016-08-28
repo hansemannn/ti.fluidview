@@ -26,15 +26,15 @@
 		24DD6CFA1134B3F500162E58 /* TiFluidviewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiFluidviewModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* TiFluidviewModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiFluidviewModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* TiFluidviewModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiFluidviewModuleAssets.m */; };
-		3A985B161CFF0F6400547968 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A985B111CFF0F6400547968 /* BAFluidView.h */; };
-		3A985B171CFF0F6400547968 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A985B121CFF0F6400547968 /* BAFluidView.m */; };
-		3A985B181CFF0F6400547968 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A985B131CFF0F6400547968 /* Constants.h */; };
-		3A985B191CFF0F6400547968 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A985B141CFF0F6400547968 /* UIColor+ColorWithHex.h */; };
-		3A985B1A1CFF0F6400547968 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A985B151CFF0F6400547968 /* UIColor+ColorWithHex.m */; };
 		3A985B1D1CFF0FA000547968 /* TiFluidviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A985B1B1CFF0FA000547968 /* TiFluidviewView.h */; };
 		3A985B1E1CFF0FA000547968 /* TiFluidviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A985B1C1CFF0FA000547968 /* TiFluidviewView.m */; };
 		3A985B221CFF109E00547968 /* TiFluidviewViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A985B201CFF109E00547968 /* TiFluidviewViewProxy.h */; };
 		3A985B231CFF109E00547968 /* TiFluidviewViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A985B211CFF109E00547968 /* TiFluidviewViewProxy.m */; };
+		3ADA60F41D7356960088B003 /* BAFluidView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADA60EF1D7356960088B003 /* BAFluidView.h */; };
+		3ADA60F51D7356960088B003 /* BAFluidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA60F01D7356960088B003 /* BAFluidView.m */; };
+		3ADA60F61D7356960088B003 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADA60F11D7356960088B003 /* Constants.h */; };
+		3ADA60F71D7356960088B003 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADA60F21D7356960088B003 /* UIColor+ColorWithHex.h */; };
+		3ADA60F81D7356960088B003 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA60F31D7356960088B003 /* UIColor+ColorWithHex.m */; };
 		AA747D9F0F9514B9006C5449 /* TiFluidview_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiFluidview_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -55,15 +55,15 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* TiFluidviewModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiFluidviewModuleAssets.h; path = Classes/TiFluidviewModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* TiFluidviewModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiFluidviewModuleAssets.m; path = Classes/TiFluidviewModuleAssets.m; sourceTree = "<group>"; };
-		3A985B111CFF0F6400547968 /* BAFluidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = "../../../../Downloads/BAFluidView-master/Pod/Classes/BAFluidView.h"; sourceTree = "<group>"; };
-		3A985B121CFF0F6400547968 /* BAFluidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = "../../../../Downloads/BAFluidView-master/Pod/Classes/BAFluidView.m"; sourceTree = "<group>"; };
-		3A985B131CFF0F6400547968 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "../../../../Downloads/BAFluidView-master/Pod/Classes/Constants.h"; sourceTree = "<group>"; };
-		3A985B141CFF0F6400547968 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "../../../../Downloads/BAFluidView-master/Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
-		3A985B151CFF0F6400547968 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "../../../../Downloads/BAFluidView-master/Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
 		3A985B1B1CFF0FA000547968 /* TiFluidviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiFluidviewView.h; path = Classes/TiFluidviewView.h; sourceTree = "<group>"; };
 		3A985B1C1CFF0FA000547968 /* TiFluidviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiFluidviewView.m; path = Classes/TiFluidviewView.m; sourceTree = "<group>"; };
 		3A985B201CFF109E00547968 /* TiFluidviewViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiFluidviewViewProxy.h; path = Classes/TiFluidviewViewProxy.h; sourceTree = "<group>"; };
 		3A985B211CFF109E00547968 /* TiFluidviewViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiFluidviewViewProxy.m; path = Classes/TiFluidviewViewProxy.m; sourceTree = "<group>"; };
+		3ADA60EF1D7356960088B003 /* BAFluidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Classes/BAFluidView/BAFluidView.h; sourceTree = "<group>"; };
+		3ADA60F01D7356960088B003 /* BAFluidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAFluidView.m; path = Classes/BAFluidView/BAFluidView.m; sourceTree = "<group>"; };
+		3ADA60F11D7356960088B003 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/BAFluidView/Constants.h; sourceTree = "<group>"; };
+		3ADA60F21D7356960088B003 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Classes/BAFluidView/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		3ADA60F31D7356960088B003 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Classes/BAFluidView/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiFluidview_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiFluidview_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTiFluidview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiFluidview.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,11 +136,11 @@
 		3A985B1F1CFF0FA600547968 /* BAFluidView */ = {
 			isa = PBXGroup;
 			children = (
-				3A985B111CFF0F6400547968 /* BAFluidView.h */,
-				3A985B121CFF0F6400547968 /* BAFluidView.m */,
-				3A985B131CFF0F6400547968 /* Constants.h */,
-				3A985B141CFF0F6400547968 /* UIColor+ColorWithHex.h */,
-				3A985B151CFF0F6400547968 /* UIColor+ColorWithHex.m */,
+				3ADA60EF1D7356960088B003 /* BAFluidView.h */,
+				3ADA60F01D7356960088B003 /* BAFluidView.m */,
+				3ADA60F11D7356960088B003 /* Constants.h */,
+				3ADA60F21D7356960088B003 /* UIColor+ColorWithHex.h */,
+				3ADA60F31D7356960088B003 /* UIColor+ColorWithHex.m */,
 			);
 			name = BAFluidView;
 			sourceTree = "<group>";
@@ -153,11 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* TiFluidview_Prefix.pch in Headers */,
-				3A985B181CFF0F6400547968 /* Constants.h in Headers */,
-				3A985B191CFF0F6400547968 /* UIColor+ColorWithHex.h in Headers */,
+				3ADA60F61D7356960088B003 /* Constants.h in Headers */,
 				3A985B1D1CFF0FA000547968 /* TiFluidviewView.h in Headers */,
-				3A985B161CFF0F6400547968 /* BAFluidView.h in Headers */,
 				24DD6CF91134B3F500162E58 /* TiFluidviewModule.h in Headers */,
+				3ADA60F71D7356960088B003 /* UIColor+ColorWithHex.h in Headers */,
+				3ADA60F41D7356960088B003 /* BAFluidView.h in Headers */,
 				3A985B221CFF109E00547968 /* TiFluidviewViewProxy.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TiFluidviewModuleAssets.h in Headers */,
 			);
@@ -233,10 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A985B171CFF0F6400547968 /* BAFluidView.m in Sources */,
 				3A985B1E1CFF0FA000547968 /* TiFluidviewView.m in Sources */,
-				3A985B1A1CFF0F6400547968 /* UIColor+ColorWithHex.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* TiFluidviewModule.m in Sources */,
+				3ADA60F51D7356960088B003 /* BAFluidView.m in Sources */,
+				3ADA60F81D7356960088B003 /* UIColor+ColorWithHex.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TiFluidviewModuleAssets.m in Sources */,
 				3A985B231CFF109E00547968 /* TiFluidviewViewProxy.m in Sources */,
 			);
